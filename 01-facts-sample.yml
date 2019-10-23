@@ -5,4 +5,4 @@
       lineinfile:
         path: /home/cloud_user/hostname
         create: yes
-        line: "{{ ansible hostname }}"
+        line: "{{ ansible_hostname }}"
