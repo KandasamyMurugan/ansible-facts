@@ -1,0 +1,8 @@
+--- # Ansible Facts exampls
+- hosts: web
+  tasks:
+    - name: Create file
+      lineinfile:
+        path: /home/cloud_user/hostname
+        create: yes
+        line: "{{ ansible hostname }}"
