@@ -1,0 +1,10 @@
+---
+- hosts: all
+  vars:
+    name: 'Kandasamy Murugan......!!!!'
+    company: 'Extreme Networks'
+  tasks:
+    - name: Basic Template
+      template:
+        src: sample-template.j2
+        dest: /home/cloud_user/output.txt

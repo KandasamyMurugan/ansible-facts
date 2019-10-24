@@ -6,3 +6,10 @@
         path: /home/cloud_user/hostname
         create: yes
         line: "{{ ansible_hostname }}"
+    - name: access magic variable
+      lineinfile:
+        path: /home/cloud_user/hostname
+        create: yes
+        line: "{{ hostvars['web']['ansible_default_ipv4']['address'] }}"
+
+
